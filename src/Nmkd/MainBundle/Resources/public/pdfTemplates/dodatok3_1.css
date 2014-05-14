@@ -1,0 +1,53 @@
+.page {
+		padding: 20mm 15mm 20mm 25mm;
+		width: 210mm;
+		height: 297mm;
+	}
+		
+	.page3 p{
+		line-height:1;
+		font-family: "Times New Roman", serif; 
+		font-size: 14pt; 
+		so-language: uk-UA;
+		color: red;
+		
+	}
+		
+	.page3 div.pre-container {
+		margin: 0px;
+	}
+		
+	.page3 .empty1 p{
+		line-height:1; 
+		font-size: 12pt; 
+		margin-top: 0.04in;
+		margin-bottom: -0.0185in;
+	}
+		
+	.page3 .empty2 p{
+		line-height:1; 
+		font-size: 16pt; 
+		font-weight: bold;
+		margin-bottom: 0.031in;
+	}
+		
+	.page3 p.pre{
+		line-height:1;
+		font-size: 14pt; 
+		so-language: uk-UA;
+		margin-top: 0in;
+		margin-bottom: 0.02in;
+	}
+		
+	.page3 p.header1 {
+	      margin-top: 0in;
+	      margin-bottom: 0in;
+	}
+	.page3 p.header2 {
+	      margin-top: 0.1in;
+	      margin-bottom: 0in;
+	}
+		
+	.page3 .cityYear {
+	      margin-top: 0.2in;
+	} 

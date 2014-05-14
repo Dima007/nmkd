@@ -1,0 +1,4 @@
+nmkd_main:
+    resource: "@NmkdMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+  <style>		
+	.page2 p{
+		line-height:1;
+		font-family: "Times New Roman", serif; 
+		font-size: 14pt; 
+		so-language: uk-UA;
+	}
+		
+		.page2 div.pre-container {
+			margin: 0px;
+		}
+
+		.page2 .headers {
+			text-align: center;
+			margin-bottom: -0.2in;
+		}
+			.page2 .headers .header1 {
+				margin-bottom: -0.13in;
+			}
+			
+				.page2 .headers .header1 p{
+					font-size: 12pt;
+					font-weight: bold;
+					line-height: 1;
+				}
+		
+					.page2 .headers .header1 p.par1{
+						margin-bottom: 0.3in;
+					}
+
+					.page2 .headers .header1 p.par2{
+						margin-bottom: 0in;
+					}
+
+					.page2 .headers .header1 p.par3{
+						margin-top: 0.05in;
+					}
+
+			.page2 .headers .header2 {
+				margin-top: -0.2in;
+			}
+
+				.page2 .headers .header2 p{
+					font-size: 16pt;
+					font-weight: bold;
+					line-height: 1;
+				}
+
+				.page2 .headers .header2 p.par1{
+					margin-bottom: 0in;
+				}
+
+				.page2 .headers .header2 p.par2{
+					margin-top: 0.05in;
+				}
+
+			
+			.page2 .form {
+				margin-top: 0;
+			}
+
+				.page2 .form p.disc-name {
+					width: 100%; /*262mm*/
+					text-align: center;
+					border-bottom: 2px solid #000;
+					margin-bottom: 0.02in;
+				}
+
+				.page2 .form table.row {
+					width: 100%;
+					margin-bottom: 0.15in;
+				}
+
+					.page2 .form .row tr td.underline {
+						border-bottom: 1px solid #000;
+						text-align: center;
+					}
+
+					.page2 .form .row tr td.text {
+						width: auto;
+						white-space: nowrap;
+						font-size: 12pt;
+					}
+
+				
+
+				.page2 .form .hint {
+					margin-top: -0.4in;
+					padding-top: 0;
+					font-size: 8pt;
+					text-align: center;
+				}
+
+
+
+
+			
+
+
+
+			
+			.page2 p.header2 {
+				margin-top: 0.1in;
+				margin-bottom: 0in;
+			}
+
+		.page2 .empty1 p,
+		.page2 .empty2 p {
+			text-align: center;
+		}
+		
+	.page2 .empty1 p{
+		line-height:1; 
+		font-size: 14pt;
+		margin-top: 0.032in;
+		margin-bottom: -0.0185in;
+	}
+		
+	.page2 .empty2 p{
+		line-height:1; 
+		font-size: 14pt; 
+		font-weight: bold;
+		margin-bottom: 0.05in;
+	}
+		
+	.page2 .headers2 p {
+		font-size: 14pt;
+		font-weight: bold;
+		line-height: 80%;
+		text-align: center;
+	}
+
+	.pre-container p {
+		font-size: 12pt;
+		line-height: 10%;
+		margin-left: 4.5in;
+	}
+
+	.page2 .cityYear p {
+	      margin-top: 0.2in;
+	      font-size: 12pt;
+	      text-align: center;
+	}
+
+
+
+
+  </style>
+</head>
+<body>
+	<div class="page2">
+		
+		<div class="pre-container">
+			<p>Додаток 2</p>
+			<p>до наказу</p>
+			<p>від {{nmkd.orderDate}} №&nbsp;{{nmkd.order}}</p>
+		</div>
+
+		<div class="headers">
+			<div class="header1">
+				<p class="par1">МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ</p>
+				<p class="par2">ЧЕРКАСЬКИЙ НАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ </p>
+					<p class="par3">ІМЕНІ БОГДАНА ХМЕЛЬНИЦЬКОГО</p>
+			</div>
+			<div class="header2">
+				<p class="par1">НАВЧАЛЬНО-МЕТОДИЧНИЙ КОМПЛЕКС </p>
+						<p class="par2">ДИСЦИПЛІНИ</p>
+			</div>
+		</div>
+
+		<div class="form">
+			
+			<table class="row">
+				<tr>
+					<td class="underline">{{nmkd.disc_name}}</td>
+				</tr>
+				<tr>
+					<td class="hint">(назва дисципліни)</td>
+				</tr>
+			</table>
+
+			<table class="row">
+				<tr>
+					<td class="text">для студентів галузі знань</td>
+					<td class="underline">{{nmkd.knowledge_kind}}</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="hint">(шифр і повна назва)</td>
+				</tr>
+			</table>
+
+			<table class="row"  style="margin-bottom: -0.05in;">
+				<tr>
+					<td class="text">напряму підготовки  /спеціальності</td>
+					<td class="underline">{{nmkd.training_direction}}</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="hint">(шифр і повна назва)</td>
+				</tr>
+			</table>
+
+			<table class="row">
+				<tr>
+					<td class="underline">{{nmkd.disc_name}}</td>
+				</tr>
+			</table>
+
+			
+			
+			
+		</div>
+
+
+
+
+		
+
+		
+	</div>
+</body>
+</html>
+
+
+
+<P LANG="uk-UA" CLASS="western" STYLE="margin-left: 4.5in;">
+<FONT SIZE=4>Додаток 2</FONT></P>
+<P LANG="uk-UA" CLASS="western" STYLE="margin-left: 4.5in"><FONT SIZE=4>до
+наказу </FONT>
+</P>
+<P LANG="uk-UA" CLASS="western" STYLE="margin-left: 4.5in"><FONT SIZE=4>від
+19.08.2013 №&nbsp;545 – д</FONT></P>
+<P LANG="uk-UA" CLASS="western"><BR>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4><B>МІНІСТЕРСТВО
+ОСВІТИ І НАУКИ УКРАЇНИ</B></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><BR>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4><B>ЧЕРКАСЬКИЙ
+НАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ</B></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4><B>ІМЕНІ
+БОГДАНА ХМЕЛЬНИЦЬКОГО</B></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><BR>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=5><B>НАВЧАЛЬНО-МЕТОДИЧНИЙ
+КОМПЛЕКС </B></FONT>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=5><B>ДИСЦИПЛІНИ</B></FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4 STYLE="font-size: 16pt"><SPAN LANG="uk-UA"><B>__________________________________________________________</B></SPAN></FONT></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=2>(назва
+дисципліни)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4><SPAN LANG="uk-UA">для
+студентів галузі знань
+____________________________________________</SPAN></FONT></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; text-indent: 0.49in">
+<FONT SIZE=2>(шифр і повна назва)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4><SPAN LANG="uk-UA">напряму
+підготовки  /спеціальності
+_____________________________________</SPAN></FONT></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; text-indent: 0.49in">
+<FONT SIZE=2>(шифр і повна назва)</FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4><SPAN LANG="uk-UA">___________________________________________________________________</SPAN></FONT></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; text-indent: 0.49in">
+ 
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>спеціалізації
+_______________________________________________________</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.49in; text-indent: 0.49in">
+<FONT SIZE=2>(шифр і повна назва)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>____________________________________________________
+форми навчання</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=2>(денної,
+заочної, екстернатної, дистанційної,
+вечірньої)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Інститут/факультет
+_________________________________________________</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Кафедра
+___________________________________________________________</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Укладач(і)
+_________________________________________________________</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=2>(науковий
+ступінь, учене звання, ініціали, прізвище)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Рецензенти:
+________________________________________________________</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=2>(науковий
+ступінь, учене звання, ініціали, прізвище)</FONT></P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4><SPAN LANG="uk-UA">___________________________________________________________________</SPAN></FONT></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4><SPAN LANG="uk-UA">___________________________________________________________________</SPAN></FONT></FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Затверджено
+на засіданні кафедри
+_____________________________________</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>__________________________
+(протокол №___ від «      »__________20__)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=4>Завідувач
+кафедри _____________________Ініціали, прізвище</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER><FONT SIZE=2>(підпис)</FONT></P>
+<P LANG="uk-UA" CLASS="western" ALIGN=CENTER>
+</P>
+<P LANG="ru-RU" CLASS="western" ALIGN=CENTER><FONT SIZE=3><FONT SIZE=4><SPAN LANG="uk-UA">Черкаси
+20__   </SPAN></FONT></FONT>
+</P> 

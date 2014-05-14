@@ -1,0 +1,22 @@
+nmkd_main_homepage:
+    pattern:  /
+    defaults: { _controller: NmkdMainBundle:Default:index }
+
+admin:
+    pattern:  /admin/
+    defaults: { _controller: NmkdMainBundle:Default:admin }
+
+login:
+    pattern:  /login
+    defaults: { _controller: NmkdMainBundle:Default:login }
+
+login_check:
+    pattern:  /login_check/
+
+logout:
+    pattern:  /logout
+    defaults: { _controller: NmkdMainBunde:Default:logout }
+
+admin_homepage:
+    pattern:  /admin/homepage/
+    defaults: { _controller: NmkdMainBundle:Default:home }
