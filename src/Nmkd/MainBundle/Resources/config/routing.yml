@@ -21,6 +21,10 @@ admin_homepage:
     pattern:  /admin/homepage/
     defaults: { _controller: NmkdMainBundle:Default:home }
 
-admin_dic:
-  pattern:  /admin/dic
-  defaults: { _controller: NmkdMainBundle:Nmkd:dic }
+admin_input:
+    pattern:  /admin/input
+    defaults: { _controller: NmkdMainBundle:Nmkd:input }
+
+admin_set_themes:
+    pattern:  /admin/set-themes
+    defaults: { _controller: NmkdMainBundle:Nmkd:setThemes }

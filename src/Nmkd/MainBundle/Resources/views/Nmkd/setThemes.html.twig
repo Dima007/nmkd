@@ -1,0 +1,106 @@
+{% extends 'NmkdMainBundle::layout.html.twig' %}
+
+{% block body %}
+    {% block hintText %}
+        <p class="bg-info">Натисніть на питання, щоб помітити його як тематичне.</p>
+    {% endblock hintText %}
+
+    {% block mainForm %}
+
+
+
+        <form id="set_themes_form" method="POST" action="set-types">
+            <div id="tableDiv_Arrays" class="tableDiv">
+
+                <table class="set_themes_table table table-bordered" id="hidechecked">
+                    <thead>
+                    <tr>
+                        <td>№</td>
+                        <td>Питання</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for key,question in questions %}
+                        <tr>
+                            <td class="num_theme">{{ key+1 }}</td>
+                            <td class="check_theme">
+                                <input class="hide" type="checkbox" name="{{ key }}">{{ question }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+
+        <script src="/src/views/js/jquery-1.9.1.js"></script>
+        <script type="text/javascript">
+
+            //highlighting of clicked elements
+            $("#hidechecked").on("click","td.check_theme",function(){
+
+                var bgColor = '#DFF0D8';
+                var imageUrl = 'src/views/img/green-tick.png';
+
+                var checker = $(this).find('input');
+                if (checker.is(':checked')) {
+                    checker.prop('checked', '');
+                    $(this).parent().css('background-color','');
+                    //$(this).find('.check_img').remove();
+                    $(this).parent().find('.num_theme').css('background-image', '');
+                    $(this).parent().find('.num_theme').css('background-repeat', '');
+                    $(this).parent().find('.num_theme').css('background-position', '');
+                } else {
+                    checker.prop('checked', 'true');
+                    $(this).parent().css('background-color',bgColor);
+                    //$(this).append('<img src='+imageUrl+' class="check_img" />');
+                    $(this).parent().find('.num_theme').css('background-image', 'url('+imageUrl+')');
+                    $(this).parent().find('.num_theme').css('background-repeat', 'no-repeat');
+                    $(this).parent().find('.num_theme').css('background-position', 'right center');
+                }
+            });
+
+            //disable selection in table
+            jQuery.fn.extend({
+                disableSelection : function() {
+                    this.each(function() {
+                        this.onselectstart = function() { return false; }; // IE, Chrome, Safari
+                        this.unselectable = "on"; // IE, Opera
+                        jQuery(this).css('-moz-user-select', 'none'); // FF
+                    });
+                },
+                enableSelection : function() {
+                    this.each(function() {
+                        this.onselectstart = function() {};
+                        this.unselectable = "off";
+                        jQuery(this).css('-moz-user-select', 'auto');
+                    });
+                }
+            });
+
+
+            $(document).ready(function(){
+                $('.set_themes_table *').disableSelection();
+            });
+
+        </script>
+
+    {% endblock mainForm %}
+
+
+    {% block prevBtn %}
+        <button type="button" class="btn btn-default" onclick="document.location.href = '/input';">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span> Повернутись
+        </button>
+    {% endblock prevBtn %}
+
+    {% block nextBtn %}
+        <div class="nmkd-next-btn">
+            <button type="button" class="btn btn-success" onclick="$('#set_themes_form').submit()">
+                <span class="glyphicon glyphicon-circle-arrow-right"></span> Далі
+            </button>
+        </div>
+    {% endblock nextBtn %}
+
+{% endblock %}

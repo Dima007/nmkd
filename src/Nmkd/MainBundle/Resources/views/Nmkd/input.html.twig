@@ -1,0 +1,46 @@
+{% extends 'NmkdMainBundle::layout.html.twig' %}
+
+{% block body %}
+
+
+    {% block hintText %}
+        <p class="bg-info">Введіть або скопіюйте список питань в поле. Кожне питання має починатись з нового рядка.</p>
+    {% endblock hintText %}
+
+    {% block mainForm %}
+        <form id="input_form" method="POST" action="set-themes">
+            <ul class = "unmarked">
+                <li><textarea name="questions" class="form-control" id="q_input"></textarea></li>
+            </ul>
+        </form>
+    {% endblock mainForm %}
+
+    {% block controls %}
+        <div class="nmkd-controls">
+
+            {% block prevBtn %}
+                <button type="button" class="btn btn-default" onclick="document.location.href = '/';">
+                    <span class="glyphicon glyphicon-circle-arrow-left"></span> Повернутись
+                </button>
+            {% endblock prevBtn %}
+
+            {% block saveSessionBtn %}
+                <button type="button" class="btn btn-default" onclick="document.location.href = '/save-session';">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Зберегти і вийти
+                </button>
+            {% endblock saveSessionBtn %}
+
+            {% block nextBtn %}
+                <div class="nmkd-next-btn">
+                    <button type="button" class="btn btn-success" onclick="$('#input_form').submit()">
+                        <span class="glyphicon glyphicon-circle-arrow-right"></span> Далі
+                    </button>
+                </div>
+            {% endblock nextBtn %}
+
+        </div>
+    {% endblock controls %}
+
+
+
+{% endblock body %}

@@ -8,11 +8,20 @@
     <link href="{{ asset('bundles/nmkdmain/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('bundles/nmkdmain/css/colorpicker.css') }}" rel="stylesheet" type="text/css"/>
     <link href="{{ asset('bundles/nmkdmain/css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nmkdmain/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nmkdmain/bootstrap/css/bootstrap-theme.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nmkdmain/bootstrap/css/bootstrap-wysihtml5.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nmkdmain/css/main.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nmkdmain/bootstrap/css/bootstrap.css.map') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nmkdmain/bootstrap/css/bootstrap-theme.css.map') }}" rel="stylesheet" type="text/css">
 
     <script src="{{ asset('bundles/nmkdmain/js/jquery-2.0.2.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('bundles/nmkdmain/js/script.js') }}" type="text/javascript"></script>
     <script src="{{ asset('bundles/nmkdmain/bootstrap/js/bootstrap.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('bundles/nmkdmain/js/colorpicker.js') }}" type="text/javascript"></script>
+    {#<script src="{{ asset('bundles/nmkdmain/js/colorpicker.js') }}" type="text/javascript"></script>#}
+    <script src="{{ asset('bundles/nmkdmain/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/nmkdmain/js/jquery-1.9.1.js.js') }}" type="text/javascript"></script>
+
 
     {% block stylesheets %}{% endblock %}
     {% block scripts %}{% endblock %}
@@ -37,7 +46,6 @@
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li {% if route == 'admin_homepage' %} {{ class|raw }} {% endif %}><a href="{{ path('admin_homepage') }}">Головна</a></li>
-                            <li {% if route == 'admin_dic' %} {{ class|raw }} {% endif %}><a href="{{ path('admin_dic') }}">Дисципліни</a></li>
                             <li class="divider"></li>
                         </ul>
                         <ul class="nav nav-pills pull-right">
