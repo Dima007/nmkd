@@ -1,0 +1,198 @@
+html,body {
+	height:100%;
+}
+
+.offset {
+	height:40px
+}
+
+ul.unmarked {
+	margin-left: 0;
+	padding-left: 0;
+}
+	ul.unmarked li {
+		list-style-type: none;
+	}
+
+li.unmarked {
+	list-style-type: none;
+}
+
+#q_input {
+	width: 100%;
+	min-height: 400px;
+	height: auto;
+}
+
+.set_themes_table {
+	width: 100%;
+}
+	.set_themes_table tr td {
+		cursor: default;
+	}
+	
+	.set_themes_table thead tr td {
+		text-align: center;
+	}
+		
+	.set_themes_table tr td.check_theme {
+		cursor: pointer;
+	}
+
+	.set_themes_table tbody tr:hover,
+	.set-types-table tr:hover {
+		background-color: #F0F0F0;
+	}
+
+	.submit_btn {
+		margin: 5px auto;
+		width: 250px;
+	}
+
+.set-types-table {
+	#width: 100%;
+}
+
+
+.fixedColumn .fixedTable td {
+	padding: 8px;
+	border: 1px solid #fff;
+}
+
+.fixedTable tr td {
+    #width: auto;
+}
+
+#questions_to_themes {
+	width: 100%;
+}
+
+	#questions_to_themes thead tr th {
+		text-align: center;
+	}
+
+	#questions_to_themes tbody tr td:hover {
+		cursor: pointer;
+	}
+
+	#sortable1,
+	#sortable2 {
+		padding: 0;
+		margin-left: 0;
+	}
+	
+
+		#sortable1 li,
+		#sortable2 li {
+			padding: 8px;
+			margin: 1px;
+			list-style-type: none;
+		}
+
+		#sortable1 li.question {
+			background-color: #D8D8D8;
+		}
+
+		#sortable2 li ol li.question {
+			margin-left: 35px;
+			
+			background-color: #DFF0D8;
+		}
+
+		#sortable2 li.theme {
+			background-color: #eaeaea;
+		}
+
+		#sortable2 ol.questions-container {
+			padding:2px;
+			background-color: #ddd;
+		}
+
+.hidden {
+	display: none;
+}
+
+
+/*---------------------------------------------------*/
+#wrap
+{
+min-height: 100%; 
+}
+
+#main
+{
+overflow:auto;
+padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer 
+{
+position: relative;
+margin-top: -100px; /* negative value of footer height */
+height: 100px;
+clear:both;
+color:#000;
+background-color: #eee
+} 
+
+/*----------------------------------------------------*/
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/src/views/fonts/glyphicons-halflings-regular.eot');
+  src: url('/src/views/fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'), url('/src/views/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/src/views/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/src/views/fonts/glyphicons-halflings-regular.svg') format('svg');
+}
+
+.nmkd-hint {
+	margin-bottom: 20px;
+}
+	.nmkd-hint p {
+		padding: 10px;
+	}
+
+.nmkd-controls {
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+	.nmkd-next-btn {
+		float:right;
+	}
+
+/*------------------------------------------------------*/
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+/*
+ol.example li.placeholder {
+  position: relative;
+  
+}
+ol.example li.placeholder:before {
+  position: absolute;
+  
+}*/
+/*---------------------------------------------------------*/
+
+.register-form {
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 10px;
+	max-width: 750px;
+}
+
+.nmkd-edit {
+	border: 1px solid #eee;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin: 10px auto;
+	width: 210mm;
+	height: 297mm;
+
+	padding: 20mm 15mm 20mm 25mm;
+}

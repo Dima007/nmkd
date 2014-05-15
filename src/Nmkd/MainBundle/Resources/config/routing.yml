@@ -20,3 +20,7 @@ logout:
 admin_homepage:
     pattern:  /admin/homepage/
     defaults: { _controller: NmkdMainBundle:Default:home }
+
+admin_dic:
+  pattern:  /admin/dic
+  defaults: { _controller: NmkdMainBundle:Nmkd:dic }
